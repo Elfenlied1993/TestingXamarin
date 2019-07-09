@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestingXamarinForms"
+             x:Class="TestingXamarinForms.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Altitude"
+               Grid.Row="0"
+               HorizontalTextAlignment="Center"
+               FontSize="28"
+               Grid.Column="0"/>
+        <Label Text="Latitude"
+               Grid.Row="0"
+               HorizontalTextAlignment="Center"
+               FontSize="28"
+               Grid.Column="1"/>
+        <Label Text="Longitude"
+               Grid.Row="1"
+               HorizontalTextAlignment="Center"
+               FontSize="28"
+               Grid.Column="0"/>
+        <Label Text="IP Address"
+               Grid.Row="1"
+               HorizontalTextAlignment="Center"
+               FontSize="28"
+               Grid.Column="1"/>
+                <Label Text="{Binding Altitude}"
+               Grid.Row="0"
+               FontSize="Medium"
+               Grid.Column="0"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+        <Label Text="{Binding Latitude}"
+               FontSize="Medium"    
+               Grid.Row="0"
+               Grid.Column="1"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+        <Label Text="{Binding Longitude}"
+               FontSize="Medium"        
+               Grid.Row="1"
+               Grid.Column="0"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+        <Label Text="{Binding IpAddress}"
+               FontSize="Medium"        
+               Grid.Row="1"
+               Grid.Column="1"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </Grid>
+</ContentPage>
