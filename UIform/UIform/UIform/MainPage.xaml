@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UIform"
+             x:Class="UIform.MainPage"
+             BackgroundColor="Black">
+
+    <FlexLayout  HorizontalOptions="Start" VerticalOptions="Start">
+        <Grid>
+            <Image Source="Back.jpg" Aspect="AspectFill" Opacity="0.3"/>
+            <FlexLayout Grow="0.5" Direction="Column" Opacity="1" Margin="20" Padding="10,10,0,0">
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Label x:Name="Head" FontSize="Large"  TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Button x:Name="Google" FontSize="Large" TextColor="White">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Label x:Name="Cloud"  FontSize="Large" TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+
+                <Button x:Name="Start"   FontSize="Large" TextColor="White" BackgroundColor="Transparent">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Label x:Name="Phone"  FontSize="Large" TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Label x:Name="Privacy"  FontSize="Small" TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+                <Label x:Name="Privacy_2"  FontSize="Small" TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Lato-Light" />
+                            <On Platform="Android" Value="Lato-Light.ttf#Lato-Light" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lato-Light.ttf#Lato" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </FlexLayout>
+
+        </Grid>
+    </FlexLayout>
+
+</ContentPage>
